@@ -1,0 +1,21 @@
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Todo List - Angular</h1>
+
+        <form class="new-task" ng-submit="addTask(newTask); newTask='';">
+            <input ng-model="newTask" type="text" name="text"
+                   placeholder="Type to add new tasks" />
+        </form>
+    </header>
+
+    <ul>
+        <li ng-repeat="task in tasks">{{tasks.text}}</li>
+
+    </ul>
+</div>
+</body>
